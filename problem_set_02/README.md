@@ -40,7 +40,7 @@ A pipeline was constructed to combine preprocessing and model training, ensuring
 | Actual No     | 6786         | 1199          |
 | Actual Yes    | 196          | 862           |
 
-**Interpretation:**
+**Explanation:**
 The model correctly classified 6786 customers who did not subscribe and 862 customers who subscribed. A total of 1199 non-subscribers were incorrectly predicted as subscribers, while 196 actual subscribers were misclassified as non-subscribers. 
 This indicates that the model is now able to detect a large portion of actual subscribers, which is important for business applications, although some false predictions still exist.
 
