@@ -3,11 +3,9 @@
 ## Introduction
 This project aims to develop a predictive model that can determine whether a customer will subscribe to a term deposit based on their banking behaviour. The dataset contains customer demographic information, account details, and historical marketing campaign data collected by a banking institution.
 Predicting customer subscription is important for banks as it helps them target the right customers and improve marketing efficiency. In this project, a machine learning approach is used to analyze customer data and build a classification model that can support data-driven decision making.
-
----
 The target variable:
 - `y = yes (1)` means customer subscribed  
-- `y = no (0)`  meansr did not subscribe  
+- `y = no (0)`  meansr did not subscribe 
 
 ---
 
