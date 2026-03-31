@@ -3,12 +3,11 @@ The problem set 01 :  Chest X-ray Classification with CNN.
 ## Introduction
 The project is aimed at developing a Convolutional Neural Network (CNN) model to perform the two-way classification of the chest X-ray images into two groups of NORMAL and PNEUMONIA. The data is a collection of pediatric chest X-ray images of patients between one and five years old in the course of normal clinical treatment.This project aim is to come up with a model that can be used to automatically identify pneumonia on X-ray images which can aid in quicker and more accurate diagnosis of medical conditions.
 
-The aim of this project is to come up with a model that can be used to automatically identify pneumonia on X-ray images which can aid in quicker and more accurate diagnosis of medical conditions.
 
 ---
 
 ## Dataset
-The data set consists of 5,863 JPEG images that are arranged in three folders:
+The data set contains 5,863 JPEG images that are stored in three folders:
 - Train
 - Validation
 - Test
