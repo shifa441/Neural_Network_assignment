@@ -5,20 +5,6 @@ The project is aimed at developing a Convolutional Neural Network (CNN) model to
 
 ---
 
-## Dataset
-The data set contains 5,863 JPEG images that are stored in three folders:
-
-- Train  
-- Validation  
-- Test  
-
-Every folder is represented by two classes:
-
-- NORMAL  
-- PNEUMONIA  
-
----
-
 ## Approach
 Keras ImageDataGenerator was used to load the dataset in Google Drive. All pictures were downsampled to 128x128 pixels and the values of the pixels were scaled to fall between 0 and 1. Rotation, zooming, and horizontal flipping are data augmentation methods that were used to enhance data variability. Training, validation and test data to develop the model were separated using the predefined folder structure directly.
 
@@ -26,9 +12,7 @@ Keras ImageDataGenerator was used to load the dataset in Google Drive. All pictu
 
 ## Methodology
 Convolutional Neural Network (CNN) was created to classify binary images. It is made up of many convolutional layers which extract significant features out of the input images, and then max-pooling layers, which reduce the dimensions.
-
 The feature maps are then transformed into a one-dimensional feature vector after feature extraction through the use of flatten layer and then undergo classification through dense layers. To minimize overfitting a dropout layer was added where the neurons are randomly disabled to prevent overfitting.
-
 The Adam optimizer and binary crossentropy loss function were used to compile the model. Early stopping was used to check loss in validation and halt training when no progress was being made, and this ensures improved generalization.
 
 ---
