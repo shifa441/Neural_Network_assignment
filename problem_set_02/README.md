@@ -17,9 +17,7 @@ The dataset was loaded from Google Drive and explored to understand its structur
 ---
 
 ## Methodology
-A Logistic Regression model was used for this binary classification task. Numerical features were processed using median imputation and standardization, while categorical features were handled using most frequent imputation and one-hot encoding. 
-
-A pipeline was constructed to combine preprocessing and model training, ensuring a structured workflow. The dataset was split into training and testing sets (80%–20%) to evaluate model performance. Since the dataset was imbalanced, class weighting was applied to improve the model’s ability to detect the minority class (yes).
+A Logistic Regression model was used for this binary classification task. Numerical features were processed using median imputation and standardization, while categorical features were handled using most frequent imputation and one-hot encoding.The dataset was split into training and testing sets (80%–20%) to evaluate model performance. Since the dataset was imbalanced, class weighting was applied to improve the model’s ability to detect the minority class (yes).
 
 ---
 
