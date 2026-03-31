@@ -1,35 +1,35 @@
-This problem set is aimed at training a CNN to classify chest X-rays.
+The problem set 01 is a computation of the Chest X-ray Classification with CNN.
 
 ## Introduction
-In this project, the researcher is aimed at constructing a Convolutional Neural Network (CNN) model to classify the images of chest X-rays into two categories: NORMAL and PNEUMONIA. The dataset is comprised of the X-ray imaging of the chest of patients aged between one and five years in their routine clinical care. 
+The project is aimed at developing a Convolutional Neural Network (CNN) model to perform the two-way classification of the chest X-ray images into two groups of NORMAL and PNEUMONIA. The data is a collection of pediatric chest X-ray images of patients between one and five years old in the course of normal clinical treatment.This project aim is to come up with a model that can be used to automatically identify pneumonia on X-ray images which can aid in quicker and more accurate diagnosis of medical conditions.
 
-The aim of the project is to create a model that will be able to identify pneumonia with X-ray images automatically and help in quicker and more accurate medical diagnosis.
+The aim of this project is to come up with a model that can be used to automatically identify pneumonia on X-ray images which can aid in quicker and more accurate diagnosis of medical conditions.
 
 ---
 
 ## Dataset
-There are 5,863 JPEG images in the dataset in three folders:
+The data set consists of 5,863 JPEG images that are arranged in three folders:
 - Train
 - Validation
 - Test
 
-In every folder, there are two classes:
+Every folder is represented by two classes:
 - NORMAL  
 - PNEUMONIA  
 
 ---
 
 ## Approach
-Google drive was used to load the dataset using Keras ImageDataGenerator. All the images were scaled to 128x128 pixels and had their pixel values scaled to 0-1. Some of the data augmentation methods that were used are rotation, zooming and horizontal flipping that were used to augment data variability. The training, validation, and test data were directly separated in the predefined folder structure to be used to develop the model.
+Keras ImageDataGenerator was used to load the dataset in Google Drive. All pictures were downsampled to 128x128 pixels and the values of the pixels were scaled to fall between 0 and 1. Rotation, zooming, and horizontal flipping are data augmentation methods that were used to enhance data variability. Training, validation and test data to develop the model were separated using the predefined folder structure directly.
 
 ---
 
 ## Methodology
-A Convolutional Neural Network (CNN) was developed in binary image classification. The model is made up of several convolutional layers that detect significant features of the input images, and then it is reduced to dimensions by max-pooling layers. 
+Convolutional Neural Network (CNN) was created to classify binary images. It is made up of many convolutional layers which extract significant features out of the input images, and then max-pooling layers, which reduce the dimensions. 
 
-Once the feature has been extracted, the feature maps are transformed into a one-dimensional vector by means of a flatten layer that is followed by dense layers. To minimize overfitting a dropout layer was added where the neurons are randomly disabled to prevent overfitting.
+The feature maps are then transformed into a one-dimensional feature vector after feature extraction through the use of flatten layer and then undergo classification through dense layers. To minimize overfitting a dropout layer was added where the neurons are randomly disabled to prevent overfitting.
 
-The loss function and the optimizer that was used to compile the model were binary crossentropy and Adam optimizer. Early stopping was used to check the loss of validation and the training was stopped when no improvement was found, thus giving improved generalization.
+The Adam optimizer and binary crossentropy loss function were used to compile the model. Early stopping was used to check loss in validation and halt training when no progress was being made, and this ensures improved generalization.
 
 ---
 
@@ -53,7 +53,7 @@ The loss function and the optimizer that was used to compile the model were bina
 | Actual PNEUMONIA | 29         | 361                 |
 
 **Interpretation:**
-The model rightly identified 179 NORMAL pictures and 55 NORMAL pictures were incorrectly identified as PNEUMONIA. In the PNEUMONIA class, 361 photos were rightly recognized and 29 were wrongly recognized as NORMAL. This means that the model is effective in both classes and more effective in identifying the cases of pneumonia.
+The model rightly categorized 179 NORMAL images, and 55 NORMAL images were wrongly categorized as PNEUMONIA. In the PNEUMONIA class, 361 photos were rightly recognized and 29 were wrongly recognized as NORMAL. It means that the model works effectively in both classes and the results are a little more effective in identifying the cases of pneumonia.
 
 ---
 
@@ -71,9 +71,9 @@ The model rightly identified 179 NORMAL pictures and 55 NORMAL pictures were inc
 | Weighted Avg | 0.87 / 0.87 / 0.86 |
 
 **Explanation:**
-The classification report demonstrates an equal performance in the two classes. Normal class is a little less in recall, which implies that some normal cases are wrongly classified. On the contrary, PNEUMONIA class is more effective in recalling, meaning that the model is very efficient in detecting cases of pneumonia. The generalization of unseen data is good since the generalization accuracy is approximately 87%.
+The classification report reveals that there was an equal performance of both classes. Normal class has a little less recall, that is some normal cases are wrongly classified. The PNEUMONIA class on the other hand is more recallable meaning that the model is very effective in detecting pneumonia cases. The generalization of the unseen data is good since the overall accuracy is approximately 87%.
 
 ---
 
 ## Conclusion
-The CNN model was also effectively created to classify the chest X-ray images as NORMAL and PNEUMONIA. The model performed well both on the training data and the test data hence better generalization. It is especially useful in identifying cases of pneumonia, which is significant in the diagnosis of medicine. Generally, the findings prove the efficiency of deep learning methods in the process of medical image classification.
+To categorize the images of the chest X-ray as either NORMAL or PNEUMONIA, the CNN model was created successfully. The model performed well on the training and test data which showed better generalization. It has a high ability to diagnose pneumonia cases and this is critical in medical diagnosis. All in all, the findings indicate the usefulness of deep learning methods in medical image classification.
